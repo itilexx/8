@@ -1,0 +1,18 @@
+$primaryblack:#252525; /*Давать классы цветам*/
+$primarywhite:#ffffff;
+$primaryhover:#ff6347;
+
+
+%FlexBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin setFlexBox($space){
+    display: flex;
+    justify-content: $space;
+}
+@mixin setSize($width, $margin){
+    width: $width;
+    margin: $margin;
+}

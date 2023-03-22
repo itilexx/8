@@ -1,0 +1,47 @@
+.header{
+    background-color:$primaryblack;
+    width: 100%;
+    padding: 15px 0;
+}
+.nav{
+    @include setFlexBox(space-between);
+    @include setSize(87%, 0 auto);
+
+    &_logo{
+        font-size: 24px;
+        color: $primarywhite;
+    }
+
+    &_navbar{
+        @include setFlexBox(space-around);
+        width: 50%;
+        list-style: none;
+    }
+
+    li{
+        height: 40px * 2; /*Можно умножать плюсовать цифры*/
+        line-height: 40px;
+    }
+    a{
+        color: $primarywhite;
+        text-decoration: none;
+        transition: 0.3s all linear;
+
+        &:hover{
+            color: $primaryhover;
+        }
+    }
+
+    
+}
+.container{
+    @include setFlexBox(space-between);
+    @include setSize(87%, 100px auto);
+
+    .col{
+        width: 30%;
+        border-radius: 20px;
+        background-color: $primaryblack;
+        height: 250px;
+    }
+}
